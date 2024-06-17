@@ -71,7 +71,7 @@ const ComprasScreen = () => {
   const renderItem = ({ item }) => (
     <View style={styles.item}>
       <Text style={styles.tipoServicio}>Tipo de Servicio: {item.tipo_servicio}</Text>
-      <Text style={styles.correoUsuario}>Correo del Usuario: {item.correo_usuario}</Text>
+      <Text style={styles.correoUsuario}>Correo: {item.correo_usuario}</Text>
       <Text style={styles.total}>Total: ${item.total}</Text>
       <Text style={styles.fecha}>Fecha: {new Date(item.fecha).toLocaleDateString('en-GB', {
         year: 'numeric',
